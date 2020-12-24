@@ -3,5 +3,5 @@ from .models import Monitor
 
 @admin.register(Monitor)
 class MonitorAdmin(admin.ModelAdmin):
-    fields = ('redirect', 'url_slug')
-    list_display = ['redirect', 'full_url', 'activated', 'ip']
+    fields = ('redirect', 'is_url', 'url_slug')
+    list_display = ['full_url', 'redirect', 'activated', 'ip']

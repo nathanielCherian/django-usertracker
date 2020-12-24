@@ -19,7 +19,7 @@ from django.urls import path, include
 from .views import index
 
 urlpatterns = [
-    path('', index),
+    path('', index, name='index'),
     path('tracker/', include('usertracker.urls')), # 'tracker' can be replaced to your choosing but include statement cannot be changed
 
     path('admin/', admin.site.urls),
