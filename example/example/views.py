@@ -1,4 +1,4 @@
 from django.shortcuts import render, HttpResponse
 
 def index(request):
-    return HttpResponse("poo")
+    return HttpResponse("INDEX PAGE")
