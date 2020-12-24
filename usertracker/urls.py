@@ -3,5 +3,5 @@ from django.urls import path
 from .views import tracker_url
 
 urlpatterns = [
-    path('', tracker_url),
+    path('<slug:slug>', tracker_url, name="usertracker"),
 ]
